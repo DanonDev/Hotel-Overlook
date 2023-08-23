@@ -1,6 +1,15 @@
 import { useState } from 'react'
 import './App.css'
+import { Header } from '../pages/home/header'
+import { Footer } from '../pages/home/footer'
 
-const App = ""
+function App() {
+    return (
+        <>
+        <Header/>
+        <Footer/>
+        </>
+    )
+}
 
 export default App
