@@ -6,7 +6,7 @@ export const FooterStyle = styled.div`
     align-items: center;
     justify-content: space-around;
     background-color: white;
-    position: fixed;
+    position: sticky;
     width: 100%;
     height: 10vh;
     bottom: 0;

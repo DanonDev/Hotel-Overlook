@@ -1,5 +1,5 @@
-import Twitter from "../../src/assets/images/Icon-twitter.png"
-import Facebook from "../../src/assets/images/Icon-facebook.png"
+import Twitter from "../../assets/images/Icon-twitter.png"
+import Facebook from "../../assets/images/Icon-facebook.png"
 import { FooterStyle } from "./footerStyled"
 
 const Footer = () => {
