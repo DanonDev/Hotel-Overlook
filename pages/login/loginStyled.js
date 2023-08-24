@@ -1,11 +1,12 @@
-import styled from "styled-components"
+import styled from "styled-components";
+
 
 export const LoginStyle = styled.div`
+
  .sectionLogin{
     display: flex;
     flex-direction: column;
     padding-left: 30%;
-    height: 100vh;
 
     h1{
         font-family: 'Open Sans', sans-serif;

@@ -7,24 +7,6 @@ const Reservation = () => {
             <h1>Reservation</h1>
             <p>Udfyld nedenstående formular for at reservere er af vores værelser.</p>
             <form>
-            <label/>
-                <select id="destonations" name="destonation & hotel">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <div className="inlineplacingfirst">
-                <label/>
-                <select id="rooms" name="værelsestype">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <label/>
                 <select id="person" name="antalPersoner">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -32,8 +14,7 @@ const Reservation = () => {
                     <option value="4">4</option>
                     <option value="5">5</option>
                 </select>
-                </div>
-                <p>Vælg prisklasse:</p>
+                <p className="priklass">Vælg prisklasse:</p>
                 <div className="inlineplacingradio">
                 <input type="radio" id="" name="Normal" value="Normal"/><span>Normal</span>
                 </div>
