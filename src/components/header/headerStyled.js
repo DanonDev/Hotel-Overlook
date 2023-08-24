@@ -9,6 +9,10 @@ export const HeaderStyle = styled.div`
     padding-top: 22px;
     padding-bottom: 22px;
 
+    /* .logo {
+        
+    } */
+
     nav {
         display: flex;
         align-items: center;
@@ -38,7 +42,7 @@ export const HeaderStyle = styled.div`
                     transition: color 0.3s, border-color 0.3s; 
 
                 &.active {
-                    color: red;
+                    color: #FF0000;
                     /* font-weight: 400; */
             }
         }
