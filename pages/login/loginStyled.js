@@ -31,8 +31,6 @@ export const LoginStyle = styled.div`
             font-family: 'Open Sans', sans-serif;
             font-weight: 500;
             box-shadow: 0px 5px 12px -3px rgba(115,115,115,0.51);
-            -webkit-box-shadow: 0px 5px 12px -3px rgba(115,115,115,0.51);
-            -moz-box-shadow: 0px 5px 12px -3px rgba(115,115,115,0.51);
 
             *&:focus{
             outline: none;

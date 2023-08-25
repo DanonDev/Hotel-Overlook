@@ -1,4 +1,6 @@
+import React, {useState, useEffect} from "react"
 import { DestStyle } from "./destinationsStyled"
+import { CountrysNav } from "./destinationsStyled"
 
 import slider12 from "../../src/assets/images/sliderImages/center-square-wroclaw.jpg"
 import slider11 from "../../src/assets/images/sliderImages/city-houses-reykjavik.jpg"
@@ -14,7 +16,18 @@ import slider2 from "../../src/assets/images/sliderImages/luftfoto-lillehammer.j
 import slider1 from "../../src/assets/images/sliderImages/mons-klint-denmark.jpg"
 
 const Destinations = () => {
+
+    const [countries, setCountries] = useState([]);
+
+    useEffect(() => {
+        fetch("http://localhost:4000/destinations")
+          .then(response => response.json())
+          .then(data => setCountries(data))
+          .catch(error => console.error("Error fetching data:", error));
+      }, []);
+
     return (
+        <>
         <DestStyle>
         <section className="sectionHome">
             <div className="imgContainer">
@@ -57,6 +70,16 @@ const Destinations = () => {
             </div>
         </section>
         </DestStyle>
+        <CountrysNav>
+        <section className="countryDetails">
+        {countries.map(country => (
+          <div key={country.id} className="coutryNav">
+            <p>{country.name}</p>
+          </div>
+        ))}
+        </section>
+        </CountrysNav>
+        </>
     )
 }
 

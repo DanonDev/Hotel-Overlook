@@ -92,3 +92,31 @@ export const DestStyle = styled.div `
         }
     }
 `
+
+export const CountrysNav = styled.div`
+
+    .countryDetails{
+        display: flex;
+        margin-left: 20%;
+        margin-right: 20%;
+        box-shadow: 3px 10px 10px -10px #111; 
+    }
+    
+    .coutryNav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: 'Open Sans', sans-serif;
+        background-color:  white;
+
+        p{
+            color: #333333;
+            cursor: pointer;
+        }
+
+        
+        p:hover{
+            color: #FF0000;
+        }
+    }
+`

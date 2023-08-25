@@ -1,6 +1,17 @@
+import { useState } from "react"
 import { ReservationStyle } from "./reservationStyled"
 
 const Reservation = () => {
+    // Here is function
+    const [inputType, setInputType] = useState('text')
+    
+    const handleFocus = () => {
+        setInputType('date');
+    };
+    
+      const handleBlur = () => {
+        setInputType('text');
+    };
     return (
         <ReservationStyle>
         <div className="sectionReservation">
@@ -22,8 +33,8 @@ const Reservation = () => {
                 <input type="radio" id="" name="Flex" value="Flex"/><span>Flex</span>
                 </div>
                 <div className="inlineplacingdate">
-                <input type="date" id="" name=""></input>
-                <input type="date" id="" name=""></input>
+                <input type={inputType} placeholder="Chek-in dato" onFocus={handleFocus} onBlur={handleBlur}></input>
+                <input type={inputType} placeholder="Chek-out dato" onFocus={handleFocus} onBlur={handleBlur}></input>
                 </div>
                 <input type="text" id="" name="Name" placeholder="Fornavn"></input>
                 <input type="text" id="" name="Surname" placeholder="Efternavn(e)"></input>

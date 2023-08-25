@@ -6,10 +6,10 @@ import { Login } from '../pages/login/login'
 import { Home } from '../pages/home/home'
 import { Reservation } from '../pages/reservation/reservation'
 import { Destinations } from '../pages/destinations/destinations'
-import './App.css'
+import './App.scss'
 
 function App() {
-    const [activeLink, setActiveLink] = useState(null);
+    const [activeLink, setActiveLink] = useState('home');
 
     const linckClicked = (className) => {
         setActiveLink(className);
