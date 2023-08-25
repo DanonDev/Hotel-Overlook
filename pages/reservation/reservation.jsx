@@ -2,7 +2,7 @@ import { useState } from "react"
 import { ReservationStyle } from "./reservationStyled"
 
 const Reservation = () => {
-    // Here is function
+    // Here is function for "data" type inputs, to display their placeholder by default state
     const [inputType, setInputType] = useState('text')
     
     const handleFocus = () => {
