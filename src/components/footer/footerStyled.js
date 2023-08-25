@@ -1,15 +1,16 @@
 import styled from "styled-components"
 
 export const FooterStyle = styled.div`
+margin-top: auto;
+
  .footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: white;
-    position: sticky;
     width: 100%;
-    height: 10vh;
-    bottom: 0;
+    padding: 20px 0;
+}
 
     .txt{
         cursor: default;
@@ -35,6 +36,5 @@ export const FooterStyle = styled.div`
         color: #999999;
         cursor: pointer;
     }
- }
 
 `

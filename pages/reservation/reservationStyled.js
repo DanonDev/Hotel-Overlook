@@ -1,19 +1,24 @@
 import styled  from "styled-components";
 
-export const ReservationStyle = styled.div `
+export const ReservationStyle = styled.div`
 
 .sectionReservation{
     display: flex;
     flex-direction: column;
     padding-left: 20%;
-    height: 120vh;
+    padding-bottom: 10%;
+
 
     h1, p, span, input, textarea, button{
         font-family: 'Open Sans', sans-serif;
         padding: 10px;
     }
 
-    input, textarea{
+    .priklass {
+        margin-bottom: -10px;
+    }
+
+    input, textarea, select{
         border: none;
         border-radius: 5px;
         padding-left: 10px;
@@ -26,9 +31,9 @@ export const ReservationStyle = styled.div `
         -moz-box-shadow: 0px 5px 12px -3px rgba(115,115,115,0.51);
         cursor: pointer;
 
-        *&:focus{
+        /* *&:focus{
             outline: none;
-        }
+        } */
     }
 
     form{
@@ -37,13 +42,10 @@ export const ReservationStyle = styled.div `
         width: 500px;
         gap: 20px;
 
-        .inlineplacingfirst{
-            display: flex;
-            justify-content: space-between;
+        select {
+         padding: 10px;
+        }
 
-            select{
-                /* width: 50px; */
-            }
         }
 
         .inlineplacingradio{
@@ -117,6 +119,6 @@ export const ReservationStyle = styled.div `
 
 
     }
-}
+
 
 `
